@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+header img{
+    width: 100px;
+}
+
+.contenido{
+    background-color: rgb(0, 0, 173);
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido nav{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+
+nav li a{
+    font-weight: 900;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav li{
+    transition: all 0.5s;
+}
+
+nav li:hover{
+    background-color: blue;
+}
+
+.active{
+    background-color: blue;
+
+}
+
+.cartas{
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartas__hijo{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    padding-bottom: 50px;
+}
+
+.cartas__hijo img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cartas__hijo h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.cartas__hijo ul{
+    
+    align-self: center;
+}
+
+
+footer{
+    padding: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer a{
+    color: black;
+}
+
+footer form fieldset {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+@media screen and (min-width: 425px) {
+    header h1{
+        font-size: 3rem;
+    }
+
+    header img{
+        width: 180px;
+    }
+    .cartas{
+        justify-content: center;
+        align-items: center;
+    }
+    .cartas__hijo{
+        width: 70%;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    header{
+        flex-direction: row;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+
+    header img{
+        width: 200px;
+    }
+    .contenido{
+        flex-direction: row;
+    }
+
+    .contenido nav{
+        width: 25%;
+    }
+
+    .cartas{
+        padding: 100px 0;
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .cartas__hijo img{
+        height: 150px;
+        object-fit: cover;
+    }
+    .cartas__hijo{
+        width: 25%;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
